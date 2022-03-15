@@ -1,0 +1,72 @@
+//needs to have lon,lat
+{
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Museo Nacional de Antropología",
+        "description": "Museo"
+      },
+      "geometry": {
+        "coordinates": [-99.18624641509874,19.426205548019134],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Angela Peralta Theater",
+        "description": "Theater"
+      },
+      "geometry": {
+        "coordinates": [-99.19409449934243,19.429332934181918],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Orchid House Polanco",
+        "description": "Garden"
+      },
+      "geometry": {
+        "coordinates": [-99.1860425672191,19.43020212863417],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Taquería Selene",
+        "description": "Theater"
+      },
+      "geometry": {
+        "coordinates": [-99.17741658330512,19.427217323658933],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Pujol",
+        "description": "Food"
+      },
+      "geometry": {
+        "coordinates": [-99.19484638823097,19.432577840077144],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Agua & Sal",
+        "description": "Food"
+      },
+      "geometry": {
+        "coordinates": [-99.19269198102687,19.428202767474424],
+        "type": "Point"
+      }
+    }
+  ],
+  "type": "FeatureCollection"
+}

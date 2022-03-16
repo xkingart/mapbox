@@ -6,29 +6,32 @@
       // Replace YOUR_STYLE_URL with your style URL.
       style: 'mapbox://styles/xkingart/cl0rdp2ro000314oergmmt3cs', 
       center: [-99.18191837224161,19.425530543790487],
-      zoom: 10
+      zoom: 15
     });
 
-  
-
-
 function getData(){
-
   return fetch('mexicoThings.json')
   .then(response =>{
-    return response.json()
+    return response.json();
   })
-};
+}
 
-function getCord(){
+function getCord(data){
+  console.log(data);
+}
+
+//function(someCord) same thing
+/* function getCord(){
   getData()
-  .then (someCord => { //function(someCord) same thing
+  .then (someCord => { 
       someCord.features.array.forEach(element => {
         addMarker(element.geometry.coordinates);
           
       });
   })
-};
+}; */
+
+getCord();
 
 
 function addMarker(cords) {
@@ -37,4 +40,4 @@ function addMarker(cords) {
       .addTo(map);
 };
 
-getCord();
+getCord(getData);

@@ -9,7 +9,7 @@
       zoom: 15
     });
 
-function getData(){
+function fetchData(){
   return fetch('mexicoThings.json')
   .then(response =>{
     return response.json();
@@ -17,8 +17,16 @@ function getData(){
 }
 
 function getCord(data){
-  console.log(data);
+  console.log(data.features[0].geometry.coordinates);
 }
+
+
+
+
+
+fetchData().then(function(data){
+  getCord(data);
+});
 
 //function(someCord) same thing
 /* function getCord(){
@@ -31,13 +39,10 @@ function getCord(data){
   })
 }; */
 
-getCord();
-
-
 function addMarker(cords) {
   var marker =  new mapboxgl.Marker()
       .setLngLat(cords)
       .addTo(map);
 };
 
-getCord(getData);
+
